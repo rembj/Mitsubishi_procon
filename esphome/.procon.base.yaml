@@ -14,6 +14,7 @@ ota:
 
 ### modbus ###
 modbus:
+  flow_control_pin: GPIO18  #D5 on the d1 mini
   id: modbus1
   send_wait_time: 200ms
 
