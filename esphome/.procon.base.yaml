@@ -879,7 +879,6 @@ number:
     max_value: 65
     step: 0.5
     multiply: 100
-    update_interval: 60s
     entity_category: config
 
     ## H/C Thermostat Target Temperature – Zone 1 (signed) (FC6: 32, MA: 40033)
@@ -897,7 +896,6 @@ number:
     max_value: 60
     step: 0.5
     multiply: 100
-    update_interval: 60s
     #on_value:
     #  - climate.control:
     #      id: ${name}_climate
