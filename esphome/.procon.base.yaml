@@ -931,6 +931,7 @@ switch:
     icon: mdi:sprout
     address: 27
     bitmask: 1
+    skip_updates: 2
     entity_category: config
 
     ## Force DHW (FC6: 37, MA: 40038)
@@ -942,6 +943,7 @@ switch:
     icon: mdi:fire-alert
     address: 37
     bitmask: 1
+    skip_updates: 2
 
     ## Holiday (FC6: 38, MA: 40039)
   - platform: modbus_controller
@@ -952,6 +954,7 @@ switch:
     icon: mdi:briefcase
     address: 38
     bitmask: 1
+    skip_updates: 2
 
     ## Cooling On Prohibit – Zone 1 (FC6: 41, MA: 40042)
   - platform: modbus_controller
@@ -963,7 +966,7 @@ switch:
     address: 41
     bitmask: 1
     entity_category: config
-
+    skip_updates: 2
 
     ## System ON/OFF (FC1: 1, MA: 00002)
   - platform: modbus_controller
@@ -974,6 +977,7 @@ switch:
     address: 1
     bitmask: 0
     icon: mdi:power
+    skip_updates: 2    
 
 select:
     ## A/C mode – Zone 1 (FC6: 28, 40029)
