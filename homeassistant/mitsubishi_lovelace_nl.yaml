@@ -33,7 +33,7 @@
           - type: conditional
             conditions:
               - entity: sensor.mitsubishi_werkings_mode
-                state: Warm Water
+                state: Warm water
             elements:
               - type: image
                 image: local/images/ecodan/ecodan-hot-water.png?v=2
@@ -176,7 +176,7 @@
           - entity: sensor.mitsubishi_boiler_aanvoer_temperatuur
             name: Boiler aanvoer temperatuur
           - entity: sensor.mitsubishi_boiler_retour_temperatuur
-            name: Boiler retoer temperatuur
+            name: Boiler retour temperatuur
           - entity: sensor.mitsubishi_verbruikt_elektrisch_vermogen
             name: Verbruikt elektrisch vermogen
           - entity: sensor.mitsubishi_cop_koelen
@@ -276,32 +276,13 @@
           - sensor.mitsubishi_werkings_mode
       - type: entities
         entities:
-          - entity: select.mitsubishi_a_c_mode
-            name: A/C mode
-          - entity: switch.mitsubishi_koelen_verboden
-            name: Cooling on prohibit
-          - entity: switch.mitsubishi_sww_eco_modus
-            name: DHW eco mode
-          - entity: select.mitsubishi_hc_controle_type
-            name: HC control type
-          - entity: number.mitsubishi_ingestelde_boiler_doel_temperatuur
-            name: Set tank water temperature
-        title: mitsubishi
-        show_header_toggle: false
-      - type: entities
-        entities:
-          - entity: sensor.mitsubishi_7_segment_display_fout_code_digit_1
-            name: 7-Segment display error code digit 1
-          - entity: sensor.mitsubishi_7_segment_display_fout_code_digit_2
-            name: 7-Segment display error code digit 2
-          - entity: sensor.mitsubishi_fout_code
-            name: Fault code
-          - entity: sensor.mitsubishi_melcobems_mini_fw_versie
-            name: Melcobems mini fw versie
-          - entity: sensor.mitsubishi_model_profiel_1
-            name: Model Profile 1
-          - entity: sensor.mitsubishi_koelmiddel_fout_info
-            name: Refrigerant error info
-          - entity: sensor.mitsubishi_systeem_type_gedetecteerd
-            name: System type detected
-        title: mitsubishi
+          - entity: binary_sensor.mitsubishi_in1_thermostaat
+            name: IN1 thermostaat
+          - entity: binary_sensor.mitsubishi_water_pomp
+            name: Water pomp
+          - entity: binary_sensor.mitsubishi_booster_element
+            name: Booster element
+          - entity: binary_sensor.mitsubishi_extern_element
+            name: Extern element
+          - entity: binary_sensor.mitsubishi_3_weg_klep
+            name: 3-weg klep
