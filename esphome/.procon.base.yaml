@@ -342,6 +342,17 @@ sensor:
       return id(heat_pump_run_time_100).state + id(heat_pump_run_time_1).state;
     update_interval: 60s
 
+    ## Last Measured Heating Energy Consumption – kWh part (FC4: 153)
+  - platform: modbus_controller
+    modbus_controller_id: ${name}
+    id: energy_used_year
+    name: "${name} Energy Used Year"
+    address: 153
+    state_class: total_increasing
+    register_type: read
+    value_type: U_WORD
+
+
     ## Last Measured Heating Energy Consumption – kWh part (FC4: 156, MA: 30157)
   - platform: modbus_controller
     modbus_controller_id: ${name}
